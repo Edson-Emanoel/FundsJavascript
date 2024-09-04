@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Append / AppendChild</title>
+</head>
+<body>
+      
+      <script>
+            // A diferença é que o AppendChild vai colocar um elemento como filho de outro, Já o Append vai colocar os elementos como irmãos
+            let div1 = document.createElement("div");
+            div1.innerText = "div 1"
+
+            let div2 = document.createElement("div");
+            div2.innerText = "div 2"
+
+            document.body.appendChild(div1, div2)
+            // ou
+            // document.body.appendChild(div1)
+            // document.body.appendChild(div2)
+            
+            document.body.append(div1, div2)
+            // ou
+            // document.body.append(div1)
+            // document.body.append(div2)
+      </script>
+</body>
+</html>

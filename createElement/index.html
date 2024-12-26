@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Array Starting</title>
+      <style>
+            *{
+                  padding: 0;
+                  margin: 0;
+                  box-sizing: border-box;
+                  font-family: sans-serif;
+            }
+            
+            body{
+                  color: #FFF;
+                  background-color: #0f1417;
+            }
+
+            main {
+                  gap: 20px;
+                  display: flex;
+                  align-items: center;
+                  flex-direction: column;
+                  justify-content: center;
+            }
+
+            .desafio {
+                  padding: 10px;
+                  background: rgba(15, 192, 15, 0.867);
+                  border-radius: 8px;
+            }
+
+            .container {
+                  width: 250px;
+                  padding: 10px 0;
+                  background: #222f37;
+            }
+
+            ul {
+                  gap: 10px;
+                  padding: 5px;
+
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+            }
+
+            li {
+                  width: 200px;
+                  height: 50px;
+
+                  padding: 0 10px;
+
+                  gap: 20px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+
+                  background: #0f1417;
+            }
+
+            .buttons {
+                  gap: 10px;
+                  display: flex;
+            }
+
+            .buttons button:nth-child(1) {
+                  width: 25px;
+                  height: 25px;
+
+                  border: none;
+                  outline: none;
+                  cursor: pointer;
+
+                  color: #FFF;
+                  background-color: #fb130b;
+
+                  transition: .4s;
+            }
+
+            .buttons button:nth-child(2) {
+                  width: 25px;
+                  height: 25px;
+
+                  border: none;
+                  outline: none;
+                  cursor: pointer;
+
+                  color: #FFF;
+                  background-color: #1D1D;
+
+                  transition: .4s;
+            }
+
+            .buttons button:hover {
+                  background-color: #164690;
+                  border-radius: 8px;
+            }
+      </style>
+</head>
+<body>
+      <main>
+            <h1>Exercício - 02</h1>
+            <h2>Estilizando</h2>
+
+            <div class="desafio">
+                  <p>Exercício 02. Estilizando</p>
+            </div>
+
+            <div class="container">
+            </div>
+      </main>
+
+      <script>
+            var container = document.querySelector(".container")
+
+            var ul = document.createElement("ul")
+            var li1 = document.createElement("li")
+            
+            // Li 01
+            var spanNome = document.createElement("span")
+            spanNome.textContent = "Edson"
+            li1.appendChild(spanNome);
+
+            var buttons = document.createElement("div")
+            buttons.classList.add("buttons")
+            li1.appendChild(buttons);
+            
+            var plusBtn = document.createElement("button")
+            plusBtn.textContent = "+"
+            buttons.appendChild(plusBtn);
+
+            var minusBtn = document.createElement("button")
+            minusBtn.textContent = "-"
+            buttons.appendChild(minusBtn);
+            
+            var li2 = document.createElement("li")
+
+            // Li 02
+            var spanNome = document.createElement("span")
+            spanNome.textContent = "Edson"
+            li2.appendChild(spanNome);
+
+            var buttons = document.createElement("div")
+            buttons.classList.add("buttons")
+            li2.appendChild(buttons);
+            
+            var plusBtn = document.createElement("button")
+            plusBtn.textContent = "+"
+            buttons.appendChild(plusBtn);
+
+            var minusBtn = document.createElement("button")
+            minusBtn.textContent = "-"
+            buttons.appendChild(minusBtn);
+
+
+            ul.appendChild(li1);
+            ul.appendChild(li2);
+            container.appendChild(ul);
+      </script>
+</body>
+</html>
